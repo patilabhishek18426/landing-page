@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Model 3 - My Favorite Car</title>
+    <meta name="description" content="Discover the Tesla Model 3, my favorite electric car. Learn about its features, specs, and why it's amazing.">
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Vibrant gradient background */
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%); /* Blue gradient */
+            color: #fff;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff6b6b; /* Red accent */
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li {
+            margin-left: 1.5rem;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ff6b6b; /* Red hover */
+            text-decoration: underline;
+        }
+
+        /* Hero section */
+        .hero {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); /* Pink-to-red gradient */
+            text-align: center;
+            padding: 4rem 2rem;
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+            position: relative;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button {
+            background: linear-gradient(45deg, #ff6b6b, #ffa500); /* Red-to-orange gradient */
+            color: #fff;
+            border: none;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.5);
+        }
+
+        /* Features section */
+        .features {
+            padding: 3rem 2rem;
+            text-align: center;
+            background: #fff;
+            color: #333;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #1e3c72;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); /* Light blue gradient */
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ff6b6b;
+        }
+
+        /* Contact section */
+        .contact {
+            padding: 3rem 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e3c72;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            li {
+                margin: 0.5rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tesla Model 3 Fan Page</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=800&h=400&fit=crop" alt="Tesla Model 3 driving on a road">
+        <h1>Welcome to My Favorite Car: Tesla Model 3</h1>
+        <p>The Tesla Model 3 is an all-electric sedan that's fast, efficient, and packed with cutting-edge technology. It's my go-to for eco-friendly driving and an exhilarating ride!</p>
+        <button>Learn More</button>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Why I Love the Tesla Model 3</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>Electric Power</h3>
+                <p>Zero emissions, instant torque, and up to 358 miles of range. Perfect for long trips without gas stops!</p>
+            </div>
+            <div class="feature">
+                <h3>Autopilot Features</h3>
+                <p>Advanced driver-assist tech makes highway driving safer and more relaxing.</p>
+            </div>
+            <div class="feature">
+                <h3>Stunning Design</h3>
+                <p>Sleek, minimalist interior with a massive touchscreen and premium materials.</p>
+            </div>
+            <div class="feature">
+                <h3>Performance</h3>
+                <p>Accelerates from 0-60 mph in just 5.3 seconds. It's fun to drive!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2023 Tesla Model 3 Fan Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
